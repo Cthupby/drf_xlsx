@@ -14,7 +14,7 @@ class BillList(generics.ListCreateAPIView):
     queryset = Bill.objects.all()
     serializer_class = BillSerializer
     filter_backends = [DjangoFilterBackend]
-    filter_fields = [ 'client_name', 'client_org']
+    filterset_fields = [ 'client_name', 'client_org']
 
     def perform_create(self, serializer):
         serializer.save()

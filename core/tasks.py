@@ -24,5 +24,5 @@ def add(excel_file_base64):
     for row in filtered_df.iterrows():
         r = row[1].to_list()
         if type(r[2] and r[3]) == int:
-            Bill.objects.create(client_name=r[0], client_org=r[1], number=r[2],
+            Bill.objects.get_or_create(client_name=r[0], client_org=r[1], number=r[2],
                                 amount=r[3], date=r[4], service=r[5])

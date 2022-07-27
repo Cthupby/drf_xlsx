@@ -9,8 +9,10 @@ click-repl==0.2.0
 Django==4.0.6
 django-filter==22.1
 djangorestframework==3.13.1
+et-xmlfile==1.1.0
 kombu==5.2.4
 numpy==1.23.1
+openpyxl==3.0.10
 pandas==1.4.3
 prompt-toolkit==3.0.30
 pybase64==1.2.2

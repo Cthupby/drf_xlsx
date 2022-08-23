@@ -10,7 +10,7 @@ def add(excel_file_base64):
     • в service не пусто ( пусто так же считается, если вместо текста знак “-”)
     • client_name, client_org не пустые 
     '''
-    df_filtered_by_str = df.loc[(df['service' or 'client_name' or 'client_org'] != None) & \
+    df_filtered_by_str = df.loc[(df['service' or 'client_name' or 'client_org'] != None) and \
                                 (df['service'] != '-')]
     '''
     • значение sum является числом
